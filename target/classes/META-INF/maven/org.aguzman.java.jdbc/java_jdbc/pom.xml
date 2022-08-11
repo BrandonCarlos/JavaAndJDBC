@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.aguzman.java.jdbc</groupId>
+  <artifactId>java_jdbc</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>18</maven.compiler.source><!-- Aqui temos a configuração do Java -->
+        <maven.compiler.target>18</maven.compiler.target>
+        <exec.mainClass>org.aguzman.java.jdbc</exec.mainClass>
+    </properties>
+    
+    <!--Aqui dentro do Maven que vamos adicionar nossa dependência de MySQL em "pom.xml" -->
+    <!-- Está dependência vamos obter atráves do central do MAVEN, do repositório que está na WEB, somente colocamos o nome -->
+    <!-- da dependência, versão e vai baixar automáticamente -->
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.30</version>
+        </dependency>
+    </dependencies>
+  
+</project>
